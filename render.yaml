@@ -26,7 +26,7 @@ services:
       - key: ADMIN_PASSWORD
         generateValue: true          # Render auto-generates a secure random value
       - key: ALLOWED_ORIGINS
-        value: '["https://krishi-connect.vercel.app", "http://localhost:3000"]'
+        value: '["https://krishi-connect-ten.vercel.app", "http://localhost:3000"]'
       - key: PYTHON_VERSION
         value: "3.11.11"
       - key: MODEL_ARTIFACT_PATH
