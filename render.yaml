@@ -1,0 +1,43 @@
+# Render.com deployment config for the FastAPI backend
+# https://render.com/docs/render-yaml
+
+services:
+  - type: web
+    name: krishiconnect-api
+    runtime: python
+    region: singapore   # closest to India
+    plan: free          # upgrade to starter for persistent disk
+
+    rootDir: apps/api
+
+    buildCommand: |
+      cd ../..
+      python build.py
+
+    startCommand: |
+      python -m uvicorn app.main:app --host 0.0.0.0 --port $PORT
+
+    envVars:
+      - key: DATABASE_URL
+        value: sqlite:///./crs.db
+      - key: ADMIN_ID
+        value: "admin"
+      - key: ADMIN_PASSWORD
+        generateValue: true          # Render auto-generates a secure random value
+      - key: ALLOWED_ORIGINS
+        value: '["https://your-app.vercel.app"]'   # replace with your Vercel URL
+      - key: PYTHON_VERSION
+        value: "3.11.11"
+      - key: MODEL_ARTIFACT_PATH
+        value: ./ml_artifacts/model.joblib
+      - key: DISABLE_ML_MODEL
+        value: "true"
+      - key: SKIP_MODEL_TRAINING
+        value: "true"
+      - key: OPENWEATHER_API_KEY
+        value: ""                    # optional; Open-Meteo is used by default
+      - key: GEMINI_API_KEY
+        value: "AIzaSyA6zlwUMWVhSg1_RnuZMfWAkePcgWqATxQ"
+    
+    # Auto-deploy on pushes to main
+    autoDeploy: true

@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img" aria-label="KrishiConnect">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#14532d"/>
+      <stop offset="1" stop-color="#16a34a"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="512" height="512" rx="112" fill="url(#g)"/>
+
+  <g fill="none" stroke="#ffffff" stroke-width="28" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M256 416 V140"/>
+
+    <path d="M256 168 C208 172 176 204 164 248"/>
+    <path d="M256 224 C214 228 190 260 178 300"/>
+    <path d="M256 280 C220 284 206 304 196 336"/>
+
+    <path d="M256 168 C304 172 336 204 348 248"/>
+    <path d="M256 224 C298 228 322 260 334 300"/>
+    <path d="M256 280 C292 284 306 304 316 336"/>
+  </g>
+</svg>

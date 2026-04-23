@@ -1,0 +1,34 @@
+version: "3.9"
+
+services:
+  api:
+    build:
+      context: ./apps/api
+      dockerfile: Dockerfile
+    ports:
+      - "8000:8000"
+    environment:
+      - DATABASE_URL=sqlite+aiosqlite:///./crs.db
+      - ADMIN_TOKEN=${ADMIN_TOKEN:-changeme-admin-token}
+      - OPENWEATHER_API_KEY=${OPENWEATHER_API_KEY:-}
+      - SOIL_API_KEY=${SOIL_API_KEY:-}
+      - MODEL_ARTIFACT_PATH=../ml_artifacts/model.joblib
+    volumes:
+      - ./apps/api:/code
+      - api_db:/code/crs.db
+    restart: unless-stopped
+
+  web:
+    build:
+      context: ./apps/web
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    environment:
+      - NEXT_PUBLIC_API_BASE_URL=http://localhost:8000
+    depends_on:
+      - api
+    restart: unless-stopped
+
+volumes:
+  api_db:

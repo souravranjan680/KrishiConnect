@@ -1,0 +1,3 @@
+# Render default build command expects a requirements.txt at repo root.
+# This forwards to the FastAPI backend dependencies in the monorepo.
+-r apps/api/requirements.txt

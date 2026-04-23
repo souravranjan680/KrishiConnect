@@ -1,0 +1,28 @@
+{
+  "name": "KrishiConnect — Premium AI Crop Advisor",
+  "short_name": "KrishiConnect",
+  "description": "India's most advanced AI-powered crop recommendation system for modern farmers. Built by Kanishka Bisht.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#064e3b",
+  "theme_color": "#064e3b",
+  "orientation": "portrait-primary",
+  "lang": "en",
+  "icons": [
+    {
+      "src": "/icons/icon-192.svg",
+      "sizes": "192x192",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/icon-512.svg",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ],
+  "categories": ["agriculture", "utilities", "ai"],
+  "screenshots": [],
+  "prefer_related_applications": false
+}
