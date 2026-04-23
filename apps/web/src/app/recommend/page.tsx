@@ -211,9 +211,9 @@ export default function RecommendPage() {
     if (feedbackHelpful === null || !result) return;
     try {
       await submitFeedback({
+        recommendation_id: result.recommendation_id,
         helpful: feedbackHelpful,
-        text: feedbackText,
-        crop: result.recommendations[0]?.crop || "unknown",
+        comment: feedbackText,
       });
       setFeedbackSent(true);
       playSuccess();
