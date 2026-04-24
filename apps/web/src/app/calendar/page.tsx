@@ -102,7 +102,7 @@ export default function CalendarPage() {
   return (
     <div>
       {/* Hero */}
-      <div style={{ background: "linear-gradient(135deg, #064e3b, #059669)" }} className="py-8 sm:py-10 px-4">
+      <div style={{ background: "linear-gradient(135deg, #064e3b, #059669)" }} className="pt-24 pb-8 sm:pt-32 sm:pb-10 px-4">
         <div className="mx-auto max-w-5xl">
           <h1 className="text-xl sm:text-2xl font-extrabold text-white mb-1 flex items-center gap-2">
             <CalendarDays className="w-6 h-6 text-emerald-300" />

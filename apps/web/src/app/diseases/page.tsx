@@ -233,7 +233,7 @@ export default function DiseasesPage() {
   return (
     <div>
       {/* Hero */}
-      <div style={{ background: "linear-gradient(135deg, #7f1d1d, #dc2626)" }} className="py-8 sm:py-10 px-4">
+      <div style={{ background: "linear-gradient(135deg, #7f1d1d, #dc2626)" }} className="pt-24 pb-8 sm:pt-32 sm:pb-10 px-4">
         <div className="mx-auto max-w-5xl">
           <h1 className="text-xl sm:text-2xl font-extrabold text-white mb-1 flex items-center gap-2">
             <Bug className="w-6 h-6 text-red-300" />

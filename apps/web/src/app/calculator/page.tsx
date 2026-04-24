@@ -258,7 +258,7 @@ export default function CalculatorPage() {
   return (
     <div>
       {/* Hero */}
-      <div style={{ background: "linear-gradient(135deg, #14532d, #15803d)" }} className="py-8 sm:py-10 px-4">
+      <div style={{ background: "linear-gradient(135deg, #14532d, #15803d)" }} className="pt-24 pb-8 sm:pt-32 sm:pb-10 px-4">
         <div className="mx-auto max-w-5xl">
           <h1 className="text-xl sm:text-2xl font-extrabold text-white mb-1 flex items-center gap-2">
             <Calculator className="w-6 h-6 text-green-300" />
