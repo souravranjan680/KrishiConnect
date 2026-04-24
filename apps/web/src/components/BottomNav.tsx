@@ -106,8 +106,8 @@ export default function BottomNav() {
                 >
                   <Icon size={24} strokeWidth={active ? 2.5 : 2} />
                 </div>
-                <span className={`text-[9px] font-black uppercase tracking-widest leading-tight transition-all ${
-                  active ? "text-emerald-900 dark:text-emerald-400 opacity-100" : "opacity-0"
+                <span className={`text-[8px] sm:text-[9px] font-black uppercase tracking-widest leading-none transition-all whitespace-nowrap ${
+                  active ? "text-emerald-900 dark:text-emerald-400 opacity-100 mt-1" : "opacity-0 absolute"
                 }`}>
                   {t(lang, key)}
                 </span>
@@ -133,8 +133,8 @@ export default function BottomNav() {
             >
               {moreOpen ? <X size={24} /> : <Menu size={24} strokeWidth={isMoreActive ? 2.5 : 2} />}
             </div>
-            <span className={`text-[9px] font-black uppercase tracking-widest leading-tight transition-all ${
-              isMoreActive ? "text-emerald-900 dark:text-emerald-400 opacity-100" : "opacity-0"
+            <span className={`text-[8px] sm:text-[9px] font-black uppercase tracking-widest leading-none transition-all whitespace-nowrap ${
+              isMoreActive ? "text-emerald-900 dark:text-emerald-400 opacity-100 mt-1" : "opacity-0 absolute"
             }`}>
               {t(lang, "navMore")}
             </span>
