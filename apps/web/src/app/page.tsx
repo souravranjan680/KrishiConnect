@@ -36,7 +36,7 @@ export default function HomePage() {
   return (
     <div className="bg-white dark:bg-black overflow-hidden select-none">
       {/* ─── HERO SECTION ─── */}
-      <section className="relative min-h-[95vh] flex items-center pt-24 pb-20 px-4 overflow-hidden">
+      <section className="relative min-h-[95vh] flex items-center pt-32 lg:pt-40 pb-20 px-4 overflow-hidden">
         {/* Background Image with Parallax */}
         <motion.div style={{ y: y1 }} className="absolute inset-0 z-0">
           <Image 
@@ -63,7 +63,7 @@ export default function HomePage() {
                 {t(lang, "heroTagline")}
               </div>
 
-              <h1 className="text-5xl sm:text-6xl md:text-8xl lg:text-[7rem] font-black text-emerald-950 dark:text-emerald-50 leading-[1.05] tracking-tight">
+              <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-[5.5rem] xl:text-[6rem] font-black text-emerald-950 dark:text-emerald-50 leading-[1.1] tracking-tight">
                 {t(lang, "heroTitle1")} <br />
                 <span className="bg-gradient-to-r from-emerald-600 to-emerald-400 bg-clip-text text-transparent italic">
                   {t(lang, "heroTitle2")}
