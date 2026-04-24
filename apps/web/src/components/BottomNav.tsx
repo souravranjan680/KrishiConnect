@@ -88,7 +88,7 @@ export default function BottomNav() {
 
       {/* Bottom bar */}
       <nav className="fixed bottom-6 left-1/2 -translate-x-1/2 z-[60] sm:hidden w-[92%]">
-        <div className="bg-white/80 dark:bg-black/80 backdrop-blur-2xl border border-white/20 dark:border-white/10 shadow-[0_10px_40px_rgba(0,0,0,0.2)] rounded-[2.5rem] px-2 h-20 flex items-center justify-around">
+        <div className="bg-white/80 dark:bg-black/80 backdrop-blur-2xl border border-white/20 dark:border-white/10 shadow-[0_10px_40px_rgba(0,0,0,0.2)] rounded-[2.5rem] px-2 h-16 sm:h-20 flex items-center justify-around">
           {TABS.map(({ href, icon: Icon, key }) => {
             const active = path === href || (href !== "/" && path.startsWith(href));
             return (
@@ -98,7 +98,7 @@ export default function BottomNav() {
                 className="relative flex flex-col items-center justify-center gap-1 flex-1 py-1 transition-all group"
               >
                 <div
-                  className={`flex items-center justify-center w-12 h-12 rounded-2xl transition-all duration-300 ${
+                  className={`flex items-center justify-center w-10 h-10 sm:w-12 sm:h-12 rounded-xl sm:rounded-2xl transition-all duration-300 ${
                     active 
                       ? "bg-emerald-500 text-white shadow-lg shadow-emerald-500/30 -translate-y-1" 
                       : "text-emerald-950/40 dark:text-emerald-50/40 group-hover:text-emerald-950 dark:group-hover:text-emerald-50"
@@ -125,7 +125,7 @@ export default function BottomNav() {
             className="flex flex-col items-center justify-center gap-1 flex-1 py-1 transition-all group"
           >
             <div
-              className={`flex items-center justify-center w-12 h-12 rounded-2xl transition-all duration-300 ${
+              className={`flex items-center justify-center w-10 h-10 sm:w-12 sm:h-12 rounded-xl sm:rounded-2xl transition-all duration-300 ${
                 isMoreActive 
                   ? "bg-emerald-500 text-white shadow-lg shadow-emerald-500/30 -translate-y-1" 
                   : "text-emerald-950/40 dark:text-emerald-50/40 group-hover:text-emerald-950 dark:group-hover:text-emerald-50"

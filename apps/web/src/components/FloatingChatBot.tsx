@@ -154,7 +154,7 @@ export default function FloatingChatBot() {
   if (pathname === "/chat") return null;
 
   return (
-    <div className="fixed bottom-24 sm:bottom-8 right-6 z-[80] flex flex-col items-end gap-4">
+    <div className="fixed bottom-[104px] sm:bottom-8 right-4 sm:right-6 z-[80] flex flex-col items-end gap-4">
       <AnimatePresence>
         {open && (
           <motion.div

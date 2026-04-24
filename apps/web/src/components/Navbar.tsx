@@ -44,7 +44,7 @@ export default function Navbar() {
 
   return (
     <nav className="fixed top-4 left-1/2 -translate-x-1/2 z-[60] w-[95%] max-w-6xl">
-      <div className="bg-white/70 dark:bg-black/70 backdrop-blur-xl border border-white/20 dark:border-white/10 shadow-[0_8px_32px_0_rgba(0,0,0,0.1)] rounded-[2rem] px-4 sm:px-6 h-16 flex items-center justify-between">
+      <div className="bg-white/70 dark:bg-black/70 backdrop-blur-xl border border-white/20 dark:border-white/10 shadow-[0_8px_32px_0_rgba(0,0,0,0.1)] rounded-[2rem] px-3 sm:px-6 h-14 sm:h-16 flex items-center justify-between">
         {/* Brand */}
         <Link href="/" className="flex items-center gap-2.5 group">
           <div className="relative w-9 h-9 rounded-xl overflow-hidden shadow-inner bg-emerald-50 dark:bg-emerald-950 p-1 flex items-center justify-center transition-transform group-hover:scale-105">

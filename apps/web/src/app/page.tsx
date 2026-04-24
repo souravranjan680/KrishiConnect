@@ -63,7 +63,7 @@ export default function HomePage() {
                 {t(lang, "heroTagline")}
               </div>
 
-              <h1 className="text-5xl sm:text-7xl font-black text-emerald-950 dark:text-emerald-50 leading-[1.1] tracking-tighter">
+              <h1 className="text-5xl sm:text-6xl md:text-8xl lg:text-[7rem] font-black text-emerald-950 dark:text-emerald-50 leading-[1.05] tracking-tight">
                 {t(lang, "heroTitle1")} <br />
                 <span className="bg-gradient-to-r from-emerald-600 to-emerald-400 bg-clip-text text-transparent italic">
                   {t(lang, "heroTitle2")}
@@ -71,14 +71,14 @@ export default function HomePage() {
                 {t(lang, "heroTitle3")}
               </h1>
 
-              <p className="max-w-md text-lg sm:text-xl text-emerald-900/60 dark:text-emerald-50/60 font-medium leading-relaxed">
+              <p className="max-w-xs sm:max-w-md text-base sm:text-lg md:text-xl text-emerald-900/60 dark:text-emerald-50/60 font-medium leading-relaxed">
                 {t(lang, "heroDesc")}
               </p>
 
-              <div className="flex flex-wrap gap-4 pt-4">
+              <div className="flex flex-col sm:flex-row gap-4 pt-4">
                 <Link
                   href="/recommend"
-                  className="px-8 py-5 rounded-3xl bg-emerald-950 dark:bg-emerald-50 text-white dark:text-emerald-950 font-black text-lg flex items-center gap-3 hover:scale-105 active:scale-95 transition-all shadow-2xl shadow-emerald-950/20 group"
+                  className="px-8 py-4 sm:py-5 rounded-3xl bg-emerald-950 dark:bg-emerald-50 text-white dark:text-emerald-950 font-black text-base sm:text-lg flex items-center justify-center gap-3 hover:scale-105 active:scale-95 transition-all shadow-2xl shadow-emerald-950/20 group"
                 >
                   <Leaf size={24} className="group-hover:rotate-12 transition-transform" />
                   {t(lang, "heroCta")}
@@ -87,7 +87,7 @@ export default function HomePage() {
                 
                 <Link
                   href="/chat"
-                  className="px-8 py-5 rounded-3xl bg-white dark:bg-white/5 border border-emerald-200/50 dark:border-white/10 text-emerald-950 dark:text-emerald-50 font-black text-lg flex items-center gap-3 hover:bg-emerald-50 dark:hover:bg-white/10 active:scale-95 transition-all"
+                  className="px-8 py-4 sm:py-5 rounded-3xl bg-white dark:bg-white/5 border border-emerald-200/50 dark:border-white/10 text-emerald-950 dark:text-emerald-50 font-black text-base sm:text-lg flex items-center justify-center gap-3 hover:bg-emerald-50 dark:hover:bg-white/10 active:scale-95 transition-all"
                 >
                   <Sparkles size={22} className="text-gold-500" />
                   {lang === "hi" ? "AI से बात करें" : "Talk to AI"}
