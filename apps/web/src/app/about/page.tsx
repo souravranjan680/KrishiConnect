@@ -39,7 +39,7 @@ export default function AboutPage() {
   return (
     <div>
       {/* Hero */}
-      <section style={{ background: "linear-gradient(135deg, #14532d, #15803d)" }} className="py-10 sm:py-16 px-4 text-center">
+      <section style={{ background: "linear-gradient(135deg, #14532d, #15803d)" }} className="pt-24 pb-10 sm:pt-32 sm:pb-16 px-4 text-center">
         <div className="mx-auto max-w-3xl">
           <div className="inline-flex items-center gap-2 px-4 py-1.5 bg-white/10 backdrop-blur-sm rounded-full text-green-200 text-xs sm:text-sm font-medium mb-4">
             <Brain size={14} /> {t(lang, "aboutHeroTag")}

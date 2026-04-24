@@ -117,7 +117,7 @@ export default function CropsPage() {
   return (
     <div>
       {/* Hero */}
-      <div style={{ background: "linear-gradient(135deg, #14532d, #15803d)" }} className="py-8 sm:py-10 px-4">
+      <div style={{ background: "linear-gradient(135deg, #14532d, #15803d)" }} className="pt-24 pb-8 sm:pt-32 sm:pb-10 px-4">
         <div className="mx-auto max-w-5xl">
           <h1 className="text-xl sm:text-2xl font-extrabold text-white mb-1">{"📚"} {t(lang, "cropsTitle")}</h1>
           <p className="text-green-200 text-xs sm:text-sm">{t(lang, "cropsSub")}</p>

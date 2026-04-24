@@ -166,7 +166,7 @@ export default function WeatherPage() {
   return (
     <div>
       {/* Hero */}
-      <div style={{ background: "linear-gradient(135deg, #1e3a5f, #2563eb)" }} className="py-8 sm:py-10 px-4">
+      <div style={{ background: "linear-gradient(135deg, #1e3a5f, #2563eb)" }} className="pt-24 pb-8 sm:pt-32 sm:pb-10 px-4">
         <div className="mx-auto max-w-5xl">
           <h1 className="text-xl sm:text-2xl font-extrabold text-white mb-1 flex items-center gap-2">
             <CloudSun className="w-6 h-6 text-blue-300" />
