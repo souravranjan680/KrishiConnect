@@ -121,9 +121,6 @@ export default function Footer() {
             <Link href="#" className="hover:text-white transition-colors">Privacy Policy</Link>
             <Link href="#" className="hover:text-white transition-colors">Terms of Service</Link>
           </div>
-          <p className="flex items-center gap-1.5 opacity-50">
-            {lang === "hi" ? "द्वारा विकसित" : "Built with"} <Sparkles size={12} className="text-gold-500" /> Kanishka Bisht
-          </p>
         </div>
       </div>
     </footer>

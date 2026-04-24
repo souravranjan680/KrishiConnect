@@ -9,7 +9,7 @@ import { LanguageProvider } from "@/components/LanguageProvider";
 
 export const metadata: Metadata = {
   title: "KrishiConnect — AI Crop Advisor",
-  description: "AI-powered crop recommendation for Indian farmers — fast, free, and mobile-first. Built by Kanishka Bisht.",
+  description: "AI-powered crop recommendation for Indian farmers — fast, free, and mobile-first.",
   manifest: "/manifest.json",
   icons: {
     icon: [
