@@ -79,6 +79,7 @@ export default function ChatPage() {
   const scrollRef = useRef<HTMLDivElement>(null);
   const inputRef = useRef<HTMLTextAreaElement>(null);
   const finalTranscriptRef = useRef<string>("");
+  const locationRef = useRef<{ lat: number; lon: number } | null>(null);
 
   // ── Init Speech ────────────────────────────────────────────────────
   useEffect(() => {
@@ -94,6 +95,18 @@ export default function ChatPage() {
       recRef.current = rec;
     }
     synthRef.current = window.speechSynthesis;
+  }, []);
+
+  // ── Fetch GPS on mount ─────────────────────────────────────────────
+  useEffect(() => {
+    if (typeof window === "undefined" || !navigator.geolocation) return;
+    navigator.geolocation.getCurrentPosition(
+      (pos) => {
+        locationRef.current = { lat: pos.coords.latitude, lon: pos.coords.longitude };
+      },
+      () => { /* permission denied – location stays null */ },
+      { enableHighAccuracy: true, timeout: 8000 }
+    );
   }, []);
 
   // ── Auto-scroll ────────────────────────────────────────────────────
@@ -126,7 +139,13 @@ export default function ChatPage() {
 
     try {
       const history = messages.slice(-6).map(m => ({ role: m.role, text: m.text }));
-      const reply = await chatWithAI(trimmed, lang, undefined, history);
+      const loc = locationRef.current;
+      const reply = await chatWithAI(
+        trimmed,
+        lang,
+        loc ? { lat: loc.lat, lon: loc.lon } : undefined,
+        history
+      );
       playMessageIn();
       setMessages(prev => [...prev, { role: "ai", text: reply, time: timeNow() }]);
       speak(reply);

@@ -127,8 +127,6 @@ async def chat(req: ChatRequest) -> ChatResponse:
                 village=req.village,
                 lang=req.lang,
             )
-            # Temporary debug injection:
-            reply += f" [DEBUG: Gemini failed: {str(exc)}]"
             return ChatResponse(reply=reply)
         except Exception as fb_exc:
             logger.exception("Fallback assistant also failed: %s", fb_exc)
