@@ -111,8 +111,6 @@ async def chat(req: ChatRequest) -> ChatResponse:
         return ChatResponse(reply=reply)
 
     except Exception as exc:
-        # If Gemini fails for any reason, fall back to the free rule-based
-        # assistant so the farmer still gets a useful answer.
         logger.warning("Gemini failed (%s), falling back to rule-based assistant.", exc)
         try:
             reply = await fallback_reply(
@@ -129,6 +127,8 @@ async def chat(req: ChatRequest) -> ChatResponse:
                 village=req.village,
                 lang=req.lang,
             )
+            # Temporary debug injection:
+            reply += f" [DEBUG: Gemini failed: {str(exc)}]"
             return ChatResponse(reply=reply)
         except Exception as fb_exc:
             logger.exception("Fallback assistant also failed: %s", fb_exc)
