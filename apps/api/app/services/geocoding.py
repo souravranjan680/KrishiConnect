@@ -11,7 +11,7 @@ from __future__ import annotations
 import httpx
 
 _NOMINATIM_URL = "https://nominatim.openstreetmap.org/search"
-_HEADERS = {"User-Agent": "KrishiConnectAI/1.0 (crop-recommendation-system)"}
+_HEADERS = {"User-Agent": "Kishan SathiAI/1.0 (crop-recommendation-system)"}
 
 
 async def geocode(query: str, country: str = "in") -> tuple[float, float]:

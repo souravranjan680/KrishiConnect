@@ -8,7 +8,7 @@ import { LanguageProvider } from "@/components/LanguageProvider";
 
 
 export const metadata: Metadata = {
-  title: "KrishiConnect — AI Crop Advisor",
+  title: "Kishan Sathi — AI Crop Advisor",
   description: "AI-powered crop recommendation for Indian farmers — fast, free, and mobile-first.",
   manifest: "/manifest.json",
   icons: {
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   appleWebApp: {
     capable: true,
     statusBarStyle: "black-translucent",
-    title: "KrishiConnect",
+    title: "Kishan Sathi",
   },
 };
 

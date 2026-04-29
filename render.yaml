@@ -3,7 +3,7 @@
 
 services:
   - type: web
-    name: krishiconnect-api
+    name: Kishan Sathi-api
     runtime: python
     region: singapore   # closest to India
     plan: free          # upgrade to starter for persistent disk
@@ -26,7 +26,7 @@ services:
       - key: ADMIN_PASSWORD
         generateValue: true          # Render auto-generates a secure random value
       - key: ALLOWED_ORIGINS
-        value: '["https://krishi-connect-ten.vercel.app", "http://localhost:3000"]'
+        value: '["https://kishan-sathi-ten.vercel.app", "http://localhost:3000"]'
       - key: PYTHON_VERSION
         value: "3.11.11"
       - key: MODEL_ARTIFACT_PATH

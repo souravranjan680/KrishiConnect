@@ -92,7 +92,7 @@ export default function AdminPage() {
       <header style={{ background: "linear-gradient(135deg, #14532d 0%, #15803d 55%, #16a34a 100%)" }}>
         <div className="mx-auto max-w-2xl px-4 pt-8 pb-12 flex flex-col gap-4">
           <a href="/" className="flex items-center gap-1.5 text-green-200 text-sm hover:text-white transition-colors w-fit">
-            <ArrowLeft size={14} /> Back to KrishiConnect
+            <ArrowLeft size={14} /> Back to Kishan Sathi
           </a>
           <div className="flex items-center gap-3">
             <div className="w-12 h-12 rounded-2xl bg-white/10 border border-white/20 flex items-center justify-center">
@@ -213,7 +213,7 @@ export default function AdminPage() {
           )}
         </>)}
 
-        <p className="text-center text-xs text-green-500">KrishiConnect Admin — Authorized access only</p>
+        <p className="text-center text-xs text-green-500">Kishan Sathi Admin — Authorized access only</p>
       </main>
     </div>
   );

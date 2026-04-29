@@ -1,5 +1,5 @@
 """
-POST /chat  — KrishiConnect AI voice/text assistant.
+POST /chat  — Kishan Sathi AI voice/text assistant.
 
 Accepts the farmer's spoken/typed question, calls Gemini Flash,
 and returns a concise plain-text answer to read aloud.

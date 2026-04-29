@@ -170,7 +170,7 @@ export default function FloatingChatBot() {
                   <Image src="/logo.png" alt="Logo" width={24} height={24} className="invert brightness-0" />
                 </div>
                 <div>
-                   <h3 className="text-sm font-black tracking-tight">KrishiConnect AI</h3>
+                   <h3 className="text-sm font-black tracking-tight">Kishan Sathi AI</h3>
                    <div className="flex items-center gap-1.5">
                       <div className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse" />
                       <span className="text-[9px] font-black uppercase tracking-widest text-emerald-400">Smart Advisor</span>

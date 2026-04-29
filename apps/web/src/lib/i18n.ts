@@ -70,7 +70,7 @@ const dict = {
     howStep4Title: "Grow Smarter",
     howStep4Desc: "See confidence scores, sowing tips and fertilizer advice per crop.",
 
-    whyTitle: "Why KrishiConnect?",
+    whyTitle: "Why Kishan Sathi?",
     whySub: "Built specifically for Indian farmers — not generic agri-apps",
     feat1: "AI-Powered",
     feat1d: "RandomForest model trained on 2200 soil-crop samples from across India.",
@@ -111,9 +111,9 @@ const dict = {
     cropTip: "Pro Tip",
 
     /* ─── About page ─── */
-    aboutTitle: "About KrishiConnect",
+    aboutTitle: "About Kishan Sathi",
     aboutHeroTag: "AI Crop Advisor",
-    aboutHeroTitle: "KrishiConnect",
+    aboutHeroTitle: "Kishan Sathi",
     aboutHeroTitleAccent: "— AI Crop Advisor",
     aboutHeroDesc: "AI-powered crop advisor for Indian farmers — free, no sign-up.",
 
@@ -332,7 +332,7 @@ const dict = {
 
     /* ─── Install prompt ─── */
     installTitle: "Install on Phone",
-    installDesc: "Add KrishiConnect to your home screen for quick access — works offline!",
+    installDesc: "Add Kishan Sathi to your home screen for quick access — works offline!",
     installBtn: "Install App",
     installDismiss: "Not now",
   },

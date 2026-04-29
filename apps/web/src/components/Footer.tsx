@@ -38,7 +38,7 @@ export default function Footer() {
                 <Image src="/logo.png" alt="Logo" width={32} height={32} className="object-contain invert brightness-0" />
               </div>
               <div>
-                <span className="block font-black text-white text-xl tracking-tight leading-none">KrishiConnect</span>
+                <span className="block font-black text-white text-xl tracking-tight leading-none">Kishan Sathi</span>
                 <span className="text-[10px] font-bold text-gold-500 uppercase tracking-widest mt-1 block">Premium AI Advisor</span>
               </div>
             </Link>
@@ -109,14 +109,14 @@ export default function Footer() {
               </li>
               <li className="flex gap-3 text-sm">
                 <Mail size={18} className="text-blue-400 shrink-0" />
-                <span>support@krishiconnect.ai</span>
+                <span>support@Kishan Sathi.ai</span>
               </li>
             </ul>
           </div>
         </div>
 
         <div className="pt-8 border-t border-white/5 flex flex-col sm:flex-row justify-between items-center gap-4 text-[10px] sm:text-xs">
-          <p>© 2026 KrishiConnect AI · {lang === "hi" ? "किसान की सेवा में समर्पित" : "Dedicated to serving farmers"}</p>
+          <p>© 2026 Kishan Sathi AI · {lang === "hi" ? "किसान की सेवा में समर्पित" : "Dedicated to serving farmers"}</p>
           <div className="flex gap-6">
             <Link href="#" className="hover:text-white transition-colors">Privacy Policy</Link>
             <Link href="#" className="hover:text-white transition-colors">Terms of Service</Link>

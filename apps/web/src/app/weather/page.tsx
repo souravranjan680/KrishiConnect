@@ -55,7 +55,7 @@ async function geocode(query: string): Promise<{ lat: number; lon: number; displ
   try {
     const r = await fetch(
       `https://nominatim.openstreetmap.org/search?format=json&q=${encodeURIComponent(query)}&countrycodes=in&limit=1`,
-      { headers: { "User-Agent": "KrishiConnect/1.0" } }
+      { headers: { "User-Agent": "Kishan Sathi/1.0" } }
     );
     const data = await r.json();
     if (data.length === 0) return null;
@@ -68,7 +68,7 @@ async function reverseGeocode(lat: number, lon: number): Promise<string | null> 
   try {
     const r = await fetch(
       `https://nominatim.openstreetmap.org/reverse?format=json&lat=${encodeURIComponent(String(lat))}&lon=${encodeURIComponent(String(lon))}&zoom=12&addressdetails=1`,
-      { headers: { "User-Agent": "KrishiConnect/1.0" } }
+      { headers: { "User-Agent": "Kishan Sathi/1.0" } }
     );
     const data = await r.json();
     const addr = data?.address ?? {};

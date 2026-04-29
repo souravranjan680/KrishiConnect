@@ -189,7 +189,7 @@ export default function ChatPage() {
               <Bot size={22} className="text-white" />
             </div>
             <div>
-              <h1 className="text-base font-black text-emerald-950 dark:text-emerald-50 leading-tight">KrishiConnect AI</h1>
+              <h1 className="text-base font-black text-emerald-950 dark:text-emerald-50 leading-tight">Kishan Sathi AI</h1>
               <div className="flex items-center gap-1.5">
                  <div className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse" />
                  <span className="text-[10px] font-black uppercase tracking-widest text-emerald-500">{lang === "hi" ? "ऑनलाइन" : "Online"}</span>
