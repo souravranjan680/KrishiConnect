@@ -1,7 +1,7 @@
 "use client";
 
 /**
- * Kishan Sathi AI — Floating Voice Assistant
+ * KrishiConnect AI — Floating Voice Assistant
  *
  * Flow:
  *  1. Farmer presses the floating bubble  →  panel opens
@@ -36,7 +36,7 @@ async function reverseGeocode(lat: number, lon: number): Promise<string | null> 
   try {
     const r = await fetch(
       `https://nominatim.openstreetmap.org/reverse?format=json&lat=${encodeURIComponent(String(lat))}&lon=${encodeURIComponent(String(lon))}&zoom=12&addressdetails=1`,
-      { headers: { "User-Agent": "Kishan Sathi/1.0" } }
+      { headers: { "User-Agent": "KrishiConnect/1.0" } }
     );
     const data = await r.json();
     const addr = data?.address ?? {};
@@ -358,7 +358,7 @@ export default function VoiceAssistant() {
       {/* ── Floating launcher bubble ──────────────────────────── */}
       <button
         type="button"
-        aria-label="Open Kishan Sathi AI assistant"
+        aria-label="Open KrishiConnect AI assistant"
         onClick={() => setOpen(o => !o)}
         style={{
           position: "fixed",
@@ -416,7 +416,7 @@ export default function VoiceAssistant() {
             <span style={{ fontSize: 22 }}>🌾</span>
             <div style={{ flex: 1 }}>
               <div style={{ color: "#fff", fontWeight: 800, fontSize: 15, lineHeight: 1.2 }}>
-                Kishan Sathi AI
+                KrishiConnect AI
               </div>
               <div style={{ color: "#bbf7d0", fontSize: 11 }}>
                 {lang === "hi" ? "Apna sawaal puchein — Hindi ya English mein" : "Ask anything about farming"}
@@ -478,7 +478,7 @@ export default function VoiceAssistant() {
                 }}>
                   {m.role === "ai" && (
                     <div style={{ fontSize: 10, fontWeight: 700, color: "#6b7280", marginBottom: 3, textTransform: "uppercase", letterSpacing: 0.5 }}>
-                      🌾 Kishan Sathi AI
+                      🌾 KrishiConnect AI
                     </div>
                   )}
                   {m.text}

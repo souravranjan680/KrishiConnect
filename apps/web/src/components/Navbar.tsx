@@ -51,7 +51,7 @@ export default function Navbar() {
             <Image src="/logo.png" alt="Logo" width={28} height={28} className="object-contain" />
           </div>
           <div className="flex flex-col">
-            <span className="font-black text-emerald-950 dark:text-emerald-50 text-base sm:text-lg leading-none tracking-tight">Kishan Sathi</span>
+            <span className="font-black text-emerald-950 dark:text-emerald-50 text-base sm:text-lg leading-none tracking-tight">KrishiConnect</span>
             <span className="text-[10px] font-bold text-gold-600 dark:text-gold-400 leading-none mt-0.5 uppercase tracking-wider">Premium AI</span>
           </div>
         </Link>

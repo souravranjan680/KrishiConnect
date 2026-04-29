@@ -8,19 +8,19 @@ import { LanguageProvider } from "@/components/LanguageProvider";
 
 
 export const metadata: Metadata = {
-  title: "Kishan Sathi — AI Crop Advisor",
+  title: "KrishiConnect — AI Crop Advisor",
   description: "AI-powered crop recommendation for Indian farmers — fast, free, and mobile-first.",
   manifest: "/manifest.json",
   icons: {
     icon: [
-      { url: "/icon.svg", type: "image/svg+xml" },
+      { url: "/icon.png", type: "image/png" },
       { url: "/favicon.ico" },
     ],
   },
   appleWebApp: {
     capable: true,
     statusBarStyle: "black-translucent",
-    title: "Kishan Sathi",
+    title: "KrishiConnect",
   },
 };
 
@@ -34,11 +34,12 @@ export const viewport: Viewport = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" data-scroll-behavior="smooth">
+    <html lang="en" data-scroll-behavior="smooth" suppressHydrationWarning>
       <head>
-        <link rel="apple-touch-icon" href="/icons/icon-192.svg" />
+        <meta name="darkreader-lock" />
+        <link rel="apple-touch-icon" href="/icons/icon-192.png" />
       </head>
-      <body className="flex flex-col min-h-screen" style={{ background: "#ffffff" }}>
+      <body className="flex flex-col min-h-screen" style={{ background: "#ffffff" }} suppressHydrationWarning>
         <LanguageProvider>
           <Navbar />
           <div className="flex-1 pb-16 sm:pb-0">{children}</div>

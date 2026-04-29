@@ -360,12 +360,12 @@ async def fallback_reply(
     if intent.name == "greeting":
         if is_hi:
             return (
-                "नमस्ते भाई! कैसे हो? मैं Kishan Sathi AI हूँ — आपका खेती का साथी। "
+                "नमस्ते भाई! कैसे हो? मैं KrishiConnect AI हूँ — आपका खेती का साथी। "
                 "बताओ क्या चल रहा है खेत में? फसल, मौसम, कीड़ा-रोग, खाद, "
                 "सरकारी योजना — कुछ भी पूछो, मज़े से बताऊंगा।"
             )
         return (
-            "Hello! I'm Kishan Sathi AI — your friendly farming assistant. "
+            "Hello! I'm KrishiConnect AI — your friendly farming assistant. "
             "What's going on in your fields? Ask me about crops, weather, pests, "
             "fertilizers, or government schemes — happy to help."
         )
@@ -501,7 +501,7 @@ async def fallback_reply(
     # General / unrecognized
     if is_hi:
         return (
-            "भाई, मैं Kishan Sathi AI हूँ — खेती में आपका पक्का साथी।\n\n"
+            "भाई, मैं KrishiConnect AI हूँ — खेती में आपका पक्का साथी।\n\n"
             "मुझसे कुछ भी पूछो:\n"
             "• कौन सी फसल बोऊं?\n"
             "• रोग/कीट का इलाज\n"
@@ -513,7 +513,7 @@ async def fallback_reply(
             "बस बोलो या लिखो, मैं हाज़िर हूँ।"
         )
     return (
-        "I'm Kishan Sathi AI — your reliable farming assistant.\n\n"
+        "I'm KrishiConnect AI — your reliable farming assistant.\n\n"
         "Ask me anything:\n"
         "• Which crop to grow?\n"
         "• Disease & pest remedies\n"

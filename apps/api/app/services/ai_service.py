@@ -1,5 +1,5 @@
 """
-Google Gemini — Official Python SDK implementation for Kishan Sathi AI.
+Google Gemini — Official Python SDK implementation for KrishiConnect AI.
 Provides high-performance, robust AI interactions with full history support.
 """
 
